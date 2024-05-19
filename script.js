@@ -22,3 +22,25 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
+
+
+// script to send email using form
+// Define the sendEmail function
+// function sendEmail() {
+//   var name = document.querySelector('.user-name').value;
+//   var email = document.querySelector('.userEmail').value;
+//   var subject = document.querySelector('.subject').value;
+//   var message = document.querySelector('.message').value;
+
+//   var mailtoLink = 'mailto:' + encodeURIComponent(email) +
+//                   '?subject=' + encodeURIComponent(subject) +
+//                   '&body=' + encodeURIComponent('Name: ' + name + '\n\nMessage: ' + message);
+
+//   window.location.href = mailtoLink;
+// }
+
+// // Listen for the form submission event
+// document.querySelector('form').addEventListener('submit', function(event) {
+//   event.preventDefault(); // Prevent the default form submission
+//   sendEmail(); // Call the sendEmail function
+// });
