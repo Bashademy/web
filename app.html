@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Raffle Draw App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./app.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>
+  <button class="roll" onclick="rollClick()">Roll</button>
+  <div class="names hide"></div>
+  <div class="winner hide"></div>
+  <button class="roll-again hide" onclick="rollClick()">Roll Again?</button>
+</main>
+<form class="entries" onsubmit="return formSubmit()">
+  <h2>Entries</h2>
+  <div>
+    <input type="text" name="entries[]" value="Item #1"/>
+  </div>
+  <div>
+    <input type="text" name="entries[]" value="Item #2"/>
+  </div>
+  <div>
+    <input type="text" name="entries[]" value="Item #3"/>
+    <button class="remove-item" type="button" onclick="removeItem(event)">&times;</button>
+  </div>
+  <button class="add-item" type="button" onclick="addItem(event)">Add Entry</button>
+  <button class="hide" type="submit"></button>
+</form>
+<!-- partial -->
+  <script  src="./app.js"></script>
+
+</body>
+</html>
